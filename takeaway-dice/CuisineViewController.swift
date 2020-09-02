@@ -10,11 +10,12 @@ import UIKit
 
 class CuisineViewController: UIViewController {
 
+    @IBOutlet weak var cuisinename: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         let names = ["Japanese", "Indian", "Fastfood", "Chinese","Lebanese"]
         let randomName = names.randomElement()!
-//        name.text = randomName
+        cuisinename.text = randomName
         // Do any additional setup after loading the view.
     }
     
