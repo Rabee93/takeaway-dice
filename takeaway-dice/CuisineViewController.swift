@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import MapKit
 
 class CuisineViewController: UIViewController {
-
+    @IBOutlet weak var mapview: MKMapView!
+    
     @IBOutlet weak var cuisinename: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +19,9 @@ class CuisineViewController: UIViewController {
         let randomName = names.randomElement()!
         cuisinename.text = randomName
         // Do any additional setup after loading the view.
+        let initialLocation = CLLocation(latitude: 21.282778, longitude: -157.829444)
+        mapview.centerToLocation(initialLocation)
+        
     }
     
 
@@ -30,4 +35,16 @@ class CuisineViewController: UIViewController {
     }
     */
 
+}
+private extension MKMapView {
+  func centerToLocation(
+    _ location: CLLocation,
+    regionRadius: CLLocationDistance = 1000
+  ) {
+    let coordinateRegion = MKCoordinateRegion(
+      center: location.coordinate,
+      latitudinalMeters: regionRadius,
+      longitudinalMeters: regionRadius)
+    setRegion(coordinateRegion, animated: true)
+  }
 }

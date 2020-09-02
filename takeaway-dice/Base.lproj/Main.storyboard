@@ -61,6 +61,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nN2-LV-H0O">
+                                <rect key="frame" x="12" y="164" width="390" height="508"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="QRQ-nk-XMx"/>
@@ -68,6 +72,7 @@
                     <navigationItem key="navigationItem" id="6BZ-q0-UaE"/>
                     <connections>
                         <outlet property="cuisinename" destination="VLK-Ax-TXB" id="bZS-SK-Z7G"/>
+                        <outlet property="mapview" destination="nN2-LV-H0O" id="X8w-i3-L0P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M6r-0e-yMf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
