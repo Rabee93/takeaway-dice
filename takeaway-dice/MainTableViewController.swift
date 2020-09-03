@@ -10,9 +10,13 @@ import UIKit
 
 class MainTableViewController: UITableViewController {
 
+    @IBOutlet var switches: [UISwitch]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+         let names = ["Japanese", "Indian", "Fastfood", "Chinese","Lebanese"]
+               let randomName = names.randomElement()!
+//               cuisinename.text = randomName
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -20,6 +24,15 @@ class MainTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
+    @IBAction func click(_ sender: Any) {
+        print("button clicked")
+        for var swich in switches{
+            print(swich.isOn)
+            
+        }
+        
+        
+    }
     // MARK: - Table view data source
 
 //    override func numberOfSections(in tableView: UITableView) -> Int {

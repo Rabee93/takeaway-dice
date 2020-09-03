@@ -15,9 +15,7 @@ class CuisineViewController: UIViewController {
     @IBOutlet weak var cuisinename: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let names = ["Japanese", "Indian", "Fastfood", "Chinese","Lebanese"]
-        let randomName = names.randomElement()!
-        cuisinename.text = randomName
+       
         // Do any additional setup after loading the view.
         let initialLocation = CLLocation(latitude: 21.282778, longitude: -157.829444)
         mapview.centerToLocation(initialLocation)

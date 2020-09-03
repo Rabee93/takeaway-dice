@@ -27,7 +27,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="I'm feeling lucky"/>
                             <connections>
-                                <segue destination="Umr-Av-L9r" kind="show" id="4sx-wq-3GW"/>
+                                <action selector="click:" destination="Yft-n1-7ih" eventType="touchUpInside" id="hxE-qw-xqw"/>
                             </connections>
                         </button>
                         <sections>
@@ -161,6 +161,13 @@
                             <outlet property="delegate" destination="Yft-n1-7ih" id="3Bl-YV-G11"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outletCollection property="switches" destination="fBf-Bq-kXb" collectionClass="NSMutableArray" id="5hJ-Di-Grm"/>
+                        <outletCollection property="switches" destination="Wcd-UX-fwO" collectionClass="NSMutableArray" id="7V3-5H-apG"/>
+                        <outletCollection property="switches" destination="HCq-8s-F7N" collectionClass="NSMutableArray" id="Alx-QP-iSs"/>
+                        <outletCollection property="switches" destination="wNT-XZ-UHg" collectionClass="NSMutableArray" id="Lcb-O7-Uhd"/>
+                        <outletCollection property="switches" destination="ZDV-hw-4QO" collectionClass="NSMutableArray" id="fi3-Bj-um4"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYU-TM-IbW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -171,7 +178,7 @@
             <objects>
                 <viewController id="Umr-Av-L9r" customClass="CuisineViewController" customModule="takeaway_dice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eHG-Wy-WDU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r8M-FF-m3w">
