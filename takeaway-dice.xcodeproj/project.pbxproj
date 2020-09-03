@@ -16,6 +16,7 @@
 		27E24C7824FFC5B8007191BC /* takeaway_diceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E24C7724FFC5B8007191BC /* takeaway_diceTests.swift */; };
 		27E24C8324FFC5B8007191BC /* takeaway_diceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E24C8224FFC5B8007191BC /* takeaway_diceUITests.swift */; };
 		27E24C9124FFC863007191BC /* CuisineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E24C9024FFC863007191BC /* CuisineViewController.swift */; };
+		27E24C93250122D3007191BC /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E24C92250122D3007191BC /* MainTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		27E24C8224FFC5B8007191BC /* takeaway_diceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = takeaway_diceUITests.swift; sourceTree = "<group>"; };
 		27E24C8424FFC5B8007191BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27E24C9024FFC863007191BC /* CuisineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuisineViewController.swift; sourceTree = "<group>"; };
+		27E24C92250122D3007191BC /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				27E24C6924FFC5B8007191BC /* Assets.xcassets */,
 				27E24C6B24FFC5B8007191BC /* LaunchScreen.storyboard */,
 				27E24C6E24FFC5B8007191BC /* Info.plist */,
+				27E24C92250122D3007191BC /* MainTableViewController.swift */,
 			);
 			path = "takeaway-dice";
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				27E24C6524FFC5B3007191BC /* ViewController.swift in Sources */,
 				27E24C9124FFC863007191BC /* CuisineViewController.swift in Sources */,
 				27E24C6124FFC5B3007191BC /* AppDelegate.swift in Sources */,
+				27E24C93250122D3007191BC /* MainTableViewController.swift in Sources */,
 				27E24C6324FFC5B3007191BC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
