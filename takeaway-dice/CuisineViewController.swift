@@ -11,11 +11,13 @@ import MapKit
 
 class CuisineViewController: UIViewController {
     @IBOutlet weak var mapview: MKMapView!
+    var randomName = "Loading..."
     
     @IBOutlet weak var cuisinename: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        
+        cuisinename.text = randomName
         // Do any additional setup after loading the view.
         let initialLocation = CLLocation(latitude: 21.282778, longitude: -157.829444)
         mapview.centerToLocation(initialLocation)

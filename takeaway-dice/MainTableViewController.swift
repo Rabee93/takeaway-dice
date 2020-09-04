@@ -11,12 +11,12 @@ import UIKit
 class MainTableViewController: UITableViewController {
 
     @IBOutlet var switches: [UISwitch]!
-    
+    let names = ["Japanese", "Indian", "Fastfood", "Chinese","Lebanese"]
     override func viewDidLoad() {
         super.viewDidLoad()
-         let names = ["Japanese", "Indian", "Fastfood", "Chinese","Lebanese"]
-               let randomName = names.randomElement()!
-//               cuisinename.text = randomName
+         
+               //
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -24,16 +24,21 @@ class MainTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
-    @IBAction func click(_ sender: Any) {
-        print("button clicked")
-        for var swich in switches{
-            print(swich.isOn)
-            
-        }
-        
-        
-    }
-    // MARK: - Table view data source
+   
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //if segue.identifier == "ExampleSegueIdentifier" {
+            if let destinationVC = segue.destination as? CuisineViewController {
+                var chosenCuisines: [String] = []
+                for i in 1...switches.count{
+                    if(switches[i-1].isOn){
+                        chosenCuisines.append(names[i-1])
+                    }
+                }
+                destinationVC.randomName = chosenCuisines.randomElement()!
+            }
+        //}
+    }    // MARK: - Table view data source
 
 //    override func numberOfSections(in tableView: UITableView) -> Int {
 //        // #warning Incomplete implementation, return the number of sections
